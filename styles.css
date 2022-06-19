@@ -1,0 +1,15 @@
+.box {
+    background: blue;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    color: white;
+}
+/*이런 방식(px)으로는 제대로 된 디자인을 할 수 없다.*/
+.box:nth-child(2) {
+    margin-left: 35px;
+}
+
+.box:nth-child(3) {
+    margin-left: 20px;
+}
