@@ -4,6 +4,9 @@
     /*Main Axis*/
     justify-content: space-around;
     height: 100vh;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    align-content: flex-start;
 }
 
 .child {
@@ -12,12 +15,9 @@
     background: peru;
     color: white;
     font-size: 50px;
-}
 
-.child:nth-child(2) {
-    align-self: center;
-    order: 1;
-}
-.child:nth-child(3) {
-    align-self: flex-end;
+    /*숫자를 가운데 오게 하려고 child도 flex container로 바꿈*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
