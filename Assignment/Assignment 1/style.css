@@ -1,0 +1,76 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+    background-color: #f6f6f6;
+    padding: 50px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: 700;
+}
+.paris {
+    font-size: 80px;
+}
+.month {
+    font-size: 40px;
+}
+
+.splitLine {
+    margin: 20px 0px 20px 0px;
+    height: 2px;
+    border: 0px;
+    background-color: black;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.left {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 770px;
+}
+
+.line1,
+.line2,
+.line3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+}
+
+.line1 > .circle {
+    background: #b7eded;
+}
+
+.line2 > .circle {
+    background: #424242;
+}
+
+.line3 > .circle {
+    background: #00b352;
+}
