@@ -50,9 +50,7 @@ body {
     height: 770px;
 }
 
-.line1,
-.line2,
-.line3 {
+.line {
     display: flex;
     justify-content: space-evenly;
 }
@@ -63,14 +61,14 @@ body {
     border-radius: 100%;
 }
 
-.line1 > .circle {
+.line:nth-child(1) > .circle {
     background: #b7eded;
 }
 
-.line2 > .circle {
+.line:nth-child(2) > .circle {
     background: #424242;
 }
 
-.line3 > .circle {
+.line:nth-child(3) > .circle {
     background: #00b352;
 }
