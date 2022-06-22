@@ -1,19 +1,17 @@
 .father {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid; /*grid 화면 생성 - father에서 해야함*/
+    grid-template-columns: 250px 250px 250px; /*3개 열 생성*/
+    grid-template-rows: 100px 50px 300px; /*3개 행 생성*/
+    gap: 10px; /*행 열 사이의 간격*/
+    column-gap: 5px; /*열 사이 간격*/
+    row-gap: 10px; /*행 사이 간격*/
 }
 
 .child {
-    flex-basis: 30%;
     background: peru;
     color: white;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.child:nth-child(4) {
-    margin-top: 10px;
 }
