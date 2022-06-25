@@ -7,7 +7,7 @@ const sass = require("gulp-sass")(require("node-sass"));
 const routes = {
     css: {
         watch: "src/scss/*",
-        src: "src/scss/styles.scss",
+        src: "src/scss/styles.scss", //여기서 일어나는 모든 일은 css로 compile된다.
         dest: "dest/css",
     },
 };
@@ -29,7 +29,7 @@ const watch = () => {
     gulp.watch(routes.css.watch, styles);
 };
 
-const clean = () => del(["dest/"]);
+const clean = () => del(["dest/"]); //컴파일된 css가 담기는 곳이다.
 
 const prepare = gulp.series([clean]);
 
