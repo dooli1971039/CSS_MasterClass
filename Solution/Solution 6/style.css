@@ -1,0 +1,112 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    background-color: #f1e656;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px repeat(2, 1fr) 50px;
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fd6b3a;
+    font-weight: 600;
+    font-style: italic;
+    border: 4px solid #fd6b3a;
+}
+
+.nav {
+    background-color: #fd6b3a;
+    font-size: 14px;
+}
+
+.under-nav {
+    background-color: white;
+    grid-column: 1 / 2;
+    border-left: 4px #fd6b3a solid;
+    border-right: 4px solid #fd6b3a;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 2;
+    grid-row: 2 / -2;
+    position: relative;
+}
+
+.center__left,
+.center__right {
+    background-size: cover;
+    background-position: center;
+}
+
+.center__left {
+    background-image: url("https://images.unsplash.com/photo-1486548730767-5c679e8eda6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+.center__right {
+    background-image: url("https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+}
+
+.orders,
+.reservations,
+.nav {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav span {
+    margin-bottom: 20px;
+}
+
+.orders,
+.reservations {
+    grid-column: -2/-1;
+    background-color: #7bb67d;
+    border-left: 4px #fd6b3a solid;
+    border-right: 4px solid #fd6b3a;
+}
+
+.orders {
+    grid-row-start: 2;
+    border-bottom: 4px #fd6b3a solid;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: white;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+}
